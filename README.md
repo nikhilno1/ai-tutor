@@ -18,7 +18,7 @@ you are in every area of the subject and how you learn, and it teaches you until
 ## Install
 
 ```
-/plugin marketplace add <github-user>/tutor
+/plugin marketplace add nikhilno1/tutor
 /plugin install tutor@tutor
 ```
 
