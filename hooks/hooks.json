@@ -1,0 +1,16 @@
+{
+  "description": "At session start, tell the tutor where the learner is in each subject under learning/ (reads files only)",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/where-we-are.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

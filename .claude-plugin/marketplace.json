@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tutor",
+  "description": "The tutor plugin: learn any subject to mastery with Claude Code",
+  "owner": {
+    "name": "Nikhil Utane"
+  },
+  "plugins": [
+    {
+      "name": "tutor",
+      "description": "Learn any subject to mastery: questions before answers, prerequisites first, levels on evidence, saved with every reply.",
+      "source": "./",
+      "category": "learning"
+    }
+  ]
+}

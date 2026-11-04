@@ -1,0 +1,10 @@
+{
+  "name": "tutor",
+  "version": "1.0.0",
+  "description": "A tutor that is always there: it teaches any subject by asking before it explains, covers prerequisites first, raises your level only on evidence, follows you wherever you wander, and saves everything it teaches to plain Markdown files with every reply, so you just say \"continue\".",
+  "author": {
+    "name": "Nikhil Utane"
+  },
+  "license": "MIT",
+  "keywords": ["learning", "tutor", "study", "spaced-repetition", "mastery", "obsidian"]
+}
