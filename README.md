@@ -15,18 +15,40 @@ you are in every area of the subject and how you learn, and it teaches you until
   You never have to say "save". Ask "what did we cover on X?" and it answers from your notes, not from memory.
 - **It comes back.** Spaced reviews (+3, +10, +30, +90 days) so you keep what you learn.
 
+## Before you start
+
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), installed and logged in. The tutor
+  uses your normal Claude Code plan or API usage; it adds no cost of its own.
+- macOS, Linux, or Windows with Git Bash (which Claude Code on Windows already needs). The session-start hook
+  is a small `sh` script using `grep`, `sed` and `awk`.
+
 ## Install
+
+Inside Claude Code (type these at the prompt):
 
 ```
 /plugin marketplace add nikhilno1/ai-tutor
 /plugin install tutor@tutor
 ```
 
-Or try it from a local copy: `claude --plugin-dir /path/to/tutor`.
+The first line adds this repo as a plugin source (a "marketplace" named `tutor`); the second installs the
+plugin `tutor` from it. Restart Claude Code, then check it's there: `/plugin` lists **tutor** as installed,
+and typing `/tutor:` shows its three skills (`learn`, `new-subject`, `challenge`).
+
+To try it without installing, clone it and point Claude Code at the folder:
+
+```
+git clone https://github.com/nikhilno1/ai-tutor.git
+claude --plugin-dir ./ai-tutor
+```
+
+**Update:** `/plugin marketplace update tutor`, then restart. **Remove:** `/plugin uninstall tutor@tutor`.
+Removing the plugin leaves your `learning/` notes untouched.
 
 ## Start
 
-Run Claude Code in the folder where you keep notes (an Obsidian vault works well) and say:
+Open a terminal in the folder where you want your notes (any folder; an Obsidian vault works well), run
+`claude`, and say:
 
 > I want to learn <subject>.
 
@@ -70,8 +92,21 @@ the files carry everything between them.
 | `skills/challenge` | spaced reviews and Level 4 challenges |
 | `hooks/hooks.json`, `scripts/where-we-are.sh` | the session-start summary (shell, reads only) |
 
-Your notes stay on your machine; the plugin sends nothing anywhere. The tutor searches the web to check facts
-that change, and says when it's unsure.
+## Privacy
+
+Your notes are plain files on your machine, and the plugin itself sends nothing anywhere. Like any Claude
+Code session, what the tutor reads (your notes, your replies) goes to Claude to produce its answers, under
+your Claude Code account's terms. The tutor searches the web to check facts that change, and says when it's
+unsure.
+
+## If something's off
+
+| Symptom | Fix |
+|---|---|
+| "continue" doesn't know where you were | Start `claude` in the folder that contains `learning/`; the hook looks there only |
+| `/tutor:` shows nothing | Restart Claude Code after installing; check `/plugin` lists it as enabled |
+| The tutor drifts or forgets mid-conversation | Start a fresh conversation per topic; the files carry everything over |
+| You want it taught differently | Edit `learning/<subject>/charter.md` or `learner.md`; it reads them every time |
 
 ## Licence
 
