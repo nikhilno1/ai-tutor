@@ -59,3 +59,11 @@ examples and worked problems wherever they help.
 - No superficial explanations. Separate established knowledge from research and from opinion or marketing.
 - Build on what I know: <the fields to draw analogies from>.
 - **Revisit:** topics come back on a schedule (spaced review), so I keep what I learn.
+
+## Sources
+
+- **The plan this map follows:** <path or link to my plan, never edited by the tutor; `source-plan.md` if I
+  pasted it; or "none: researched by the tutor">
+- **Schedule:** <the plan's dates or weeks, or "none">
+- **References the map draws on:** <3–6 sources with links; "none: the map follows my plan"; or "Not checked
+  against current sources">

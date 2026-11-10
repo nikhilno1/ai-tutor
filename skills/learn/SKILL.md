@@ -1,6 +1,6 @@
 ---
 name: learn
-description: The tutor. Use when the user says "continue", "where were we", "learn <topic>", "teach me <topic>", asks about a topic in a subject they are studying with the tutor (a folder under learning/), asks what was covered before ("what did we discuss about X?"), or says "where am I", "help" or "stop here" about their studies.
+description: The tutor. Use when the user says "continue", "where were we", "learn <topic>", "teach me <topic>", asks about a topic in a subject they are studying with the tutor (a folder under learning/), asks what was covered before ("what did we discuss about X?"), or says "where am I", "help" or "stop here" about their studies. A subject with no folder under learning/ yet, or a plan to learn from, goes to tutor:new-subject first.
 ---
 
 # The tutor
@@ -14,11 +14,14 @@ study, they learn properly.
 ## The files (the record; this chat is not)
 
 Each subject is a folder, `learning/<subject>/` in the folder Claude Code runs in (an Obsidian vault works
-well). No such folder, or a subject that isn't there: use skill `tutor:new-subject` to set it up first.
+well). No such folder, a subject that isn't there, or a plan or syllabus they want to learn from: use skill
+`tutor:new-subject` to set it up first (it researches or follows their plan, gets their approval, then hands
+back here to start).
 
 - `charter.md`: the contract for this subject: the goal, the standard, the levels, the teaching stages, the
-  three questions, the ground rules, what the learner already knows. Read it the first time in a
-  conversation, and follow it. Edit it only when they ask.
+  three questions, the ground rules, what the learner already knows, and the Sources (their own plan, if the
+  map follows one, and any schedule). Read it the first time in a conversation, and follow it. Edit it only
+  when they ask.
 - `map.md`: **"Where we are"** (Now, Parked, Suggested next), the dimensions' status, and every topic's row:
   `| ID | Topic | Needs | Level | Evidence | Review |`. **The resume point.** Read it first, every time.
 - `learner.md`: **how they learn**: stated preferences (dated), what works and what doesn't, strengths to
@@ -27,6 +30,7 @@ well). No such folder, or a subject that isn't there: use skill `tutor:new-subje
   Read a topic's note before teaching it.
 - `log.md`: one line per topic per conversation, newest last; only ever append.
 - `how-to-use.md`: the learner's one-page guide.
+- `source-plan.md`, if present: the plan they pasted, word for word. Their plan files are never edited.
 
 Several subjects: "continue" means the one whose map changed last, unless they name another.
 
@@ -66,9 +70,10 @@ If a write fails, say so in the reply. Never claim something is saved that isn't
   most 5 lines: the topic in progress and where it stopped; up to two parked threads (one line each, why
   parked); one review that's due (Review on or before today) as a 2-minute warm-up. Away more than two weeks:
   offer a quick retrieval check on the last topic first.
-- **A topic named:** find it in the map (by ID or meaning). Not there: add it to the nearest module with its
-  Needs, marked as an extension (say so in one line). A broad ask is a module: start at its first topic whose
-  Needs are met.
+- **A topic named:** find it in the map (by ID or meaning). Not there but part of this subject: add it to the
+  nearest module with its Needs, marked `(extension)` (say so in one line). Not part of any subject they have:
+  it's a new subject, `tutor:new-subject` (if it could go either way, ask in one line). A broad ask is a
+  module: start at its first topic whose Needs are met.
 - **Switching mid-topic** is fine: it is already saved (step 1); park it with where it stopped and start the
   new one. A side thread comes back the same way.
 
@@ -143,7 +148,8 @@ They shouldn't have to remember commands or a sequence. End every reply with one
 or say next ("Next: answer in your own words", "Next: say *continue* for stage 4"). Plain phrases, not slash
 commands.
 - "help": the gist of `how-to-use.md` in at most 6 lines, then what to do right now.
-- "where am I?": each dimension's status and the topics in progress, at most 10 lines.
+- "where am I?": each dimension's status and the topics in progress, at most 10 lines; if the charter records a
+  schedule, one line on where they stand against it.
 - "stop here", "done for today": everything is already saved; append the log line if this topic has none yet,
   then "Saved. Say *continue* next time."
 

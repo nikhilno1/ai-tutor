@@ -1,14 +1,15 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "tutor",
-  "description": "The tutor plugin: learn any subject to mastery with Claude Code",
+  "name": "ai-tutor",
+  "description": "AI tutor for Claude Code: learn any subject to mastery, from a topic or from your own study plan",
   "owner": {
-    "name": "Nikhil Utane"
+    "name": "Nikhil Utane",
+    "url": "https://github.com/nikhilno1"
   },
   "plugins": [
     {
       "name": "tutor",
-      "description": "Learn any subject to mastery: questions before answers, prerequisites first, levels on evidence, saved with every reply.",
+      "description": "Learn any subject to mastery: from a topic (it researches and drafts a map you approve) or from your own study plan. Questions before answers, prerequisites first, levels on evidence, saved with every reply.",
       "source": "./",
       "category": "learning"
     }
