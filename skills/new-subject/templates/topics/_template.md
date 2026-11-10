@@ -38,6 +38,10 @@ research versus opinion marked.)
 
 (The Level 3 task, and its result when done.)
 
+## Sources
+
+(What this topic was taught from, researched before the first lesson: `- <title> · <link> · checked <date>`.)
+
 ## Evidence
 
 (One line per level earned: `L<n> · <date> · <what: explained back, practice result, defended answer>`.)

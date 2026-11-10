@@ -1,7 +1,7 @@
 {
   "name": "tutor",
-  "version": "1.1.0",
-  "description": "A tutor that is always there. Say \"teach me X\" and it researches the subject and drafts a map for you to approve, or point it at your own study plan and it follows that. It asks before it explains, covers prerequisites first, raises your level only on evidence, and saves everything to plain Markdown with every reply, so you just say \"continue\".",
+  "version": "1.2.0",
+  "description": "A tutor that is always there. Say \"teach me X\" and it researches the subject and drafts a map for you to approve, or point it at your own study plan and it follows that. It researches every topic before teaching it, goes as deep as you choose per topic, asks before it explains, raises your level only on evidence, and saves everything to plain Markdown with every reply, so you just say \"continue\".",
   "author": {
     "name": "Nikhil Utane",
     "url": "https://github.com/nikhilno1"
