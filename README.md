@@ -47,8 +47,8 @@ Removing the plugin leaves your notes untouched.
 > Teach me how databases handle transactions.
 
 1. It asks six short questions in one message: why you're learning it; the standard you're aiming for and how
-   deep you want to go; what you already know; how you like to learn; what "doing it" means for you; any book
-   or course you want used. Answer briefly, or say **"just start"** and it uses sensible defaults.
+   deep you want to go; what you already know; how you like to learn (including broad first or one topic at a
+   time); what "doing it" means for you; any book or course you want used. Answer briefly, or say **"just start"** and it uses sensible defaults.
 2. It researches how the subject is taught today (syllabi, courses, standard textbooks) and drafts a map:
    modules, topics, the prerequisites between them, and how deep to go on each. A narrow topic gets a handful
    of topics; a whole field gets a full curriculum.
@@ -100,11 +100,12 @@ ends with one line telling you what to say next.
 | "switch to <topic>" | saves exactly where you are in this one, starts the other |
 | "alternate between <A> and <B>" / "finish <A>, then <B>" | sets a rhythm; it suggests the next topic to match |
 | "just the gist of <topic>" / "go deep on <topic>" | changes how far it takes that topic, or a whole module |
+| "go broad first" / "go topic by topic" | switches between a quick pass over everything then deeper passes, and each topic to its target in turn |
 | "pass" | skips the question: it gives you the answer and moves on |
 | "what did we cover on <topic>?" | shows what it taught, from your notes, and which file it's in |
 | "review" | one quick question on a topic that's due for review |
 | "challenge me on <topic>" | an expert role-play that pushes on your answer (Level 4) |
-| "where am I?" | how many topics have reached your target, and every topic in progress |
+| "where am I?" | which pass you're on, how many topics have reached your target, and every topic in progress |
 | "help" | a one-page summary and what to do right now |
 
 Every reply ends with one line telling you what to say next, so there's nothing to memorise.
@@ -116,6 +117,12 @@ Every reply ends with one line telling you what to say next, so there's nothing 
   standards, the current textbook, recognised experts) and teaches from them. Each topic's note lists its
   sources with the date they were checked; they're re-checked after 30 days. A fact it can't source is marked
   as such. This adds about a minute at the start of each topic.
+- **Broad first, then deeper.** By default it learns the subject in passes: first every topic to level 1
+  (short lessons: what it is, why it matters, an example), so you see the whole map early and every later
+  detail has somewhere to attach; then level 2 where your targets ask for it; then practice projects that span
+  several topics; then expert challenges. Coming back to a topic on the next pass doubles as a review. Prefer
+  to take each topic all the way before the next? Say "go topic by topic". Want one topic deep right now? "Go
+  deep on <topic>" works in either mode.
 - **As deep as you want, topic by topic.** Every topic has a target: **overview** (explain it simply),
   **working knowledge** (how it works and where it breaks), **practitioner** (do it for real) or **expert**
   (defend it under hard questions). You set the overall depth when you start, adjust any module in the draft,
@@ -157,7 +164,7 @@ it up, put it in git.
 ```
 learning/<subject>/
   charter.md       how you want to be taught: goal, standard, depth, levels, sources (yours to edit)
-  map.md           where you are: topics in progress, rhythm, suggested next;
+  map.md           where you are: approach and pass, topics in progress, rhythm, suggested next;
                    every topic's target, level, evidence and review date
   learner.md       how you learn: preferences, what works, strengths, mistakes that recur
   topics/          one note per topic: everything taught, its sources, your own words, corrections, evidence
@@ -167,7 +174,7 @@ learning/<subject>/
 ```
 
 When a session starts, a small script reads your maps (it never writes) and tells Claude which topics are in
-progress and how many reviews are due, so "continue" works in a brand-new conversation.
+progress, how many reviews are due and how far the current pass has got, so "continue" works in a brand-new conversation.
 
 ## Requirements and costs
 

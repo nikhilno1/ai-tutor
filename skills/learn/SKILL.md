@@ -22,7 +22,7 @@ back here to start).
   three questions, the ground rules, what the learner already knows, and the Sources (their own plan, if the
   map follows one, and any schedule). Read it the first time in a conversation, and follow it. Edit it only
   when they ask.
-- `map.md`: **"Where we are"** (In progress, Waiting, Rhythm, Suggested next), the dimensions' status, and every
+- `map.md`: **"Where we are"** (Approach, In progress, Waiting, Rhythm, Suggested next), the dimensions' status, and every
   topic's row: `| ID | Topic | Needs | Target | Level | Evidence | Review |`. **The resume point.** Read it
   first, every time. **Target** is how deep the learner wants to go on that topic: `L1` overview, `L2` working
   knowledge, `L3` practitioner, `L4` expert. (A map without the Target column, from an older version: the first
@@ -43,6 +43,23 @@ is ever "parked" or "unfinished": it's in progress, and it resumes exactly where
 edits only its own topic's line, its own topic's row and note, and appends to the log; that is what makes two
 conversations at once safe. **An older map with "Now" and "Parked" lines:** the first time you edit it, turn
 both into "In progress" lines (and add the Waiting and Rhythm lines), changing nothing else.
+
+**The approach: broad first, or one topic at a time.** The map's "Approach" line says which.
+- **Broad first** (the default): the subject is learned in passes. **Pass 1** takes every topic to L1, so the
+  learner sees the whole map early; **pass 2** takes every topic whose target is L2 or more to L2; **pass 3**
+  brings L3 topics to L3, through practice that spans several topics where it can; **pass 4**, L4 challenges.
+  A topic is done for the pass when its level reaches the pass level, or its own target if that is lower.
+  Coming back to a topic on the next pass also works as a spaced review. The line reads `broad first · pass
+  <n>`.
+- **One topic at a time:** each topic goes all the way to its target before the next.
+- The learner switches any time ("go broad first", "go topic by topic"): change the line, say so in one line.
+  **A map with no Approach line** (an older version): add `broad first · pass <n>` on your first edit, where n is
+  the lowest pass not yet complete, and say so in one line.
+- **A deliberate deep dive** is always fine in broad first: "go deep on X" or "take X to its target" teaches X
+  to its target now; the approach doesn't change.
+- **The pass ends** when every topic is done for it. The session-start summary counts this ("pass 1: 18 of
+  96 done"); don't count it yourself. When it ends, say so in one line, move the line to the next pass, and
+  suggest the first topic of the new pass.
 
 ## 1. Save as you go: every reply, not at the end
 
@@ -70,7 +87,8 @@ Also, when it happens:
   review drops the level by one and sets +3. Taught but no level yet: Evidence `taught <date>`, Review +3 days.
 - **They leave a topic** (switched, stopped for the day, or reached the target): append one line to `log.md`
   (`- <date> · <id> <topic> · <what happened> · <level change> · stopped at: <where>`). Not at its target: its
-  "In progress" line already says where it stopped; leave it. At its target: remove its line. Waiting on a
+  "In progress" line already says where it stopped; leave it. At its target, or done for the current pass
+  (broad first): remove its line. Waiting on a
   prerequisite: move its line to "Waiting" with what it waits for. Then set "Suggested next" (step 2,
   rhythm).
 - Update `last_updated` in what you changed.
@@ -85,7 +103,8 @@ If a write fails, say so in the reply. Never claim something is saved that isn't
     one due review as a 2-minute warm-up. Pick one (the Rhythm's choice if one is set, else the one closest to
     its target, else the most recent), say why in one line, and start it; end with how to take another
     instead ("or say *continue 2.1*").
-  - **None:** "Suggested next".
+  - **None:** "Suggested next". In broad first, that is the next topic below the pass level whose Needs are
+    met, in map order, staying in the same dimension as the last topic while it has any left.
   - **Several subjects** with topics in progress: list across subjects, naming the subject on each line.
   - Away more than two weeks: offer a quick retrieval check on the topic first.
 - **"Continue <topic>"** ("continue MCP", "continue 5.4", "back to penalties"): resume that topic's line,
@@ -115,8 +134,9 @@ now.
 
 ## 4. Prerequisites first
 
-Walk the topic's Needs, recursively. A prerequisite is met at L1 when the topic's target is L1, and at L2
-otherwise (or at its own target, if that is lower). For each one below that: ask 1–2 sharp diagnostic questions,
+Walk the topic's Needs, recursively. A prerequisite is met when it is at the level you're teaching toward,
+counting at most L2 (or at its own target, if that is lower): teaching toward L1 needs L1 underneath, toward L2
+or more needs L2. For each one below that: ask 1–2 sharp diagnostic questions,
 not a lecture. Solid answer: record L1 or L2 with "diagnostic" as evidence and move on. Shaky: say "we need X
 first, because Y", move the target's line to "Waiting" ("waiting on X"), and teach X; come back to the target
 when X is done, move it back to "In progress", and say so. Don't start from zero where they aren't: the charter
@@ -149,12 +169,15 @@ move. So before the first explanation of a topic (a diagnostic question can come
 This costs a minute at the start of each topic; that is the point of the tool. Don't skip it because the topic
 seems stable or you feel sure.
 
-## 6. Teach toward the next level, up to the target
+## 6. Teach toward the next level, up to where this topic stops
 
-Find their current level (the map, or a quick diagnostic) and the topic's Target. Teach toward the next level
-only, and stop at the target.
+Find their current level (the map, or a quick diagnostic) and where the topic stops now: its Target, or in
+broad first, the pass level if that is lower (unless they asked to go deep on it). Teach toward the next level
+only, and stop there. **Which stages for which level** (the charter's seven): L1 is stages 1, 2 and 4 (the
+concept, why it matters, a real example), a short lesson; L2 is stages 3, 5 and 7 (the mechanism, where it
+goes wrong, the expert's view); L3 is stage 6, through practice.
 
-- **L0→L1, L1→L2:** the charter's teaching stages, interactively. Ask them to predict before you explain
+- **L0→L1, L1→L2:** those stages, interactively. Ask them to predict before you explain
   ("what do you think happens when…?"), one stage per message (or part of one), then check. They can say
   "pass" to any question: answer it straight away and move on. Anchor new ideas on what they already know (the
   charter's background, `learner.md`'s strengths). Diagrams, worked examples and pseudo-code wherever they
@@ -174,8 +197,11 @@ never compress it.
 - Pointing back to an earlier lesson: recap it in a sentence, don't just name it.
 - Full sentences. No arrow chains or fragments in place of explanation; bullets list things, they don't explain.
 
-**At the target, stop.** Say in one line that the topic is where they wanted it ("1.4 is at L2, your target:
-working knowledge"), offer to go deeper in the same line, and suggest the next topic. An Overview topic (L1)
+**At the stopping point, stop.** At the target, say in one line that the topic is where they wanted it ("1.4
+is at L2, your target: working knowledge") and offer to go deeper. At the pass level (broad first), say it's
+done for this pass and comes back on pass <n+1> ("1.4 is at L1 for now; we'll take it to L2 on pass 2"), and
+offer to go deep on it now instead. Then suggest the next topic. In broad first, a pass-3 practice task covers
+several topics of a module where it can, and records L3 on each one it actually exercised. An Overview topic (L1)
 gets no practice task and no challenge; a Working knowledge topic (L2), no challenge.
 
 **Teach until they understand.** If an answer shows a missing foundation, stop, name it, cover it (or branch to
@@ -209,7 +235,8 @@ They shouldn't have to remember commands or a sequence. End every reply with one
 or say next ("Next: answer in your own words", "Next: say *continue* for stage 4"). Plain phrases, not slash
 commands.
 - "help": the gist of `how-to-use.md` in at most 6 lines, then what to do right now.
-- "where am I?": per dimension, how many topics have reached their target, then every topic in progress with
+- "where am I?": the approach and, in broad first, the pass and its count from the session-start summary;
+  per dimension, how many topics have reached their target; then every topic in progress with
   where it stopped, and the rhythm if one is set, at most 12 lines; if the charter records a schedule, one
   line on where they stand against it. A topic at its target is done, whatever the target; never call an
   Overview topic at L1 a gap.

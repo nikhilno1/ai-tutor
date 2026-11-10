@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0 · 2026-11-10
+
+- **Broad first, then deeper** (the default). The subject is learned in passes: every topic to L1 first (short
+  lessons: the concept, why it matters, an example), then L2 where the target allows, then practice spanning
+  several topics, then challenges. "Go topic by topic" switches to taking each topic to its target in turn;
+  "go deep on X" is a deliberate deep dive in either mode. Each level now maps to stages of the charter's
+  seven. The map gains an "Approach" line (added on first edit to older maps); the session-start hook counts
+  the pass ("pass 1: 18 of 96 done") so the tutor never computes it.
+
 ## 1.2.0 · 2026-11-10
 
 - **Taught from current sources.** Before the first lesson on each topic the tutor searches, reads the best

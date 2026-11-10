@@ -17,9 +17,11 @@ topic IDs. **Review:** the date it comes back (`YYYY-MM-DD`). Details of everyth
 
 ## Where we are
 
-Every topic I'm working on has a line under In progress, newest first: where it stopped, exactly. I can move
-between them freely; nothing is parked.
+**Approach:** `broad first · pass <n>` (pass 1 takes every topic to L1, pass 2 to L2 where the target allows,
+and so on) or `one topic at a time` (each to its target). Every topic I'm working on has a line under In
+progress, newest first: where it stopped, exactly. I can move between them freely; nothing is parked.
 
+- **Approach:** broad first · pass 1
 - **In progress:**
   - none yet.
 - **Waiting** (on a prerequisite): none.

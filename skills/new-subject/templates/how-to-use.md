@@ -22,6 +22,7 @@ say next, so there's no sequence to learn.
 | "continue <topic>" | goes back to that topic, exactly where it stopped |
 | "alternate between <A> and <B>" / "finish <A>, then <B>" | sets a rhythm; it suggests the next one to match |
 | "just the gist of <topic>" / "go deep on <topic>" | changes how far it takes that topic (or a whole module) |
+| "go broad first" / "go topic by topic" | a quick pass over every topic then deeper passes, or each topic to its target in turn |
 | "what did we cover on <topic>?" | shows what it taught, from your notes, and which file |
 | "review" | one quick question on a topic that's due; minutes |
 | "challenge me on <topic>" | an expert pushes on your answer (Level 4) |

@@ -36,8 +36,9 @@ start"** to use the defaults (shown in brackets; tell them afterwards which defa
    [a capable practitioner; no deadline; working knowledge]
 3. **What you already know:** your background, and anything near this subject you know well. [ask one
    diagnostic question when teaching starts]
-4. **How you like to learn:** e.g. questions before answers, analogies to your field, short sessions. [the
-   tutor's defaults]
+4. **How you like to learn:** e.g. questions before answers, analogies to your field, short sessions; and
+   **broad first** (a quick pass over every topic, then deeper passes) or **one topic at a time** (each to its
+   target before the next). [the tutor's defaults; broad first]
 5. **What "doing it" means here:** building, solving problems, writing, speaking, practising a skill. This
    becomes Level 3. [what practitioners of this subject actually do]
 
@@ -112,7 +113,8 @@ Show it compactly, in one message:
 - Two or three prerequisite chains, so they see the order of foundations (`4.3 needs 2.1, 3.2`).
 - Way B: the proposed additions, numbered, each acceptable on its own ("accept 1 and 3").
 - Where you're unsure, in one line.
-- Where you'd start, and why.
+- The approach (broad first: "first a quick pass over all <n> topics, then deeper passes where your targets
+  ask for it"; or one topic at a time), and where you'd start, and why.
 
 Then ask: **"Shall I set this up? Say *yes*, or tell me what to change."** Ask for changes in one round, not
 topic by topic; they can ask to see every topic of a module. Changes: redraft, show only what changed, and ask
@@ -126,8 +128,9 @@ From `templates/`, filled in from the interview and the approved draft:
   questions, ground rules, and Sources: their plan (or "none: researched by the tutor"), any schedule, and the
   references you used (Way B: those that checked the gaps, or "none: the map follows the plan"). In their
   words where they gave them.
-- `map.md`: Where we are (In progress and Waiting: none yet; Rhythm: none; Suggested next: the first topic
-  whose Needs are met, starting with a one-question diagnostic), the dimensions, one table per module.
+- `map.md`: Where we are (Approach: `broad first · pass 1` or `one topic at a time`, from question 4; In
+  progress and Waiting: none yet; Rhythm: none; Suggested next: the first topic whose Needs are met, starting
+  with a one-question diagnostic), the dimensions, one table per module.
 - `learner.md`: their answer to question 4, dated; question 3 under strengths.
 - `topics/_template.md`, `log.md`, `how-to-use.md`: copied as they are, with the subject's name filled in.
 - `source-plan.md`: only for a pasted plan (step 2B).

@@ -46,6 +46,10 @@ challenge (L4). Discussing a topic isn't mastering it.
 4. A real example. 5. Where it goes wrong: failure modes, misconceptions, pitfalls. 6. Applying it: how you'd
 actually do it. 7. The expert's view: trade-offs, limits, open questions.
 
+Level 1 is stages 1, 2 and 4; Level 2 adds 3, 5 and 7; Level 3 is 6, through practice. **Broad first** (unless
+the map's Approach says otherwise): a short pass taking every topic to Level 1, then deeper passes where my
+targets ask for it.
+
 Questions before answers: I predict, then the tutor explains. Terms explained before they're used. Diagrams,
 examples and worked problems wherever they help.
 
