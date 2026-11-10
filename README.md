@@ -87,7 +87,7 @@ From a real first session ("Teach me how DNS works", then "just start"), shorten
 > **Shall I set this up? Say *yes*, or tell me what to change.**
 
 After "yes", it writes the files and asks one diagnostic question to find where to start. Each lesson after
-that begins by saying what it's teaching from ("Teaching from: <the sources it read>, checked today") and
+that begins by saying what it's teaching from ("Teaching from: *the sources it read*, checked today") and
 ends with one line telling you what to say next.
 
 ## Then, just say "continue"
@@ -95,16 +95,16 @@ ends with one line telling you what to say next.
 | Say | It does |
 |---|---|
 | "continue" | picks up where you stopped; with several topics on the go, lists them and starts the best one |
-| "continue <topic>" | goes back to that topic, exactly where it stopped |
-| "teach me <anything>", or just ask a question | finds the topic, checks the basics under it, teaches toward your next level |
-| "switch to <topic>" | saves exactly where you are in this one, starts the other |
-| "alternate between <A> and <B>" / "finish <A>, then <B>" | sets a rhythm; it suggests the next topic to match |
-| "just the gist of <topic>" / "go deep on <topic>" | changes how far it takes that topic, or a whole module |
+| "continue *topic*" | goes back to that topic, exactly where it stopped |
+| "teach me *anything*", or just ask a question | finds the topic, checks the basics under it, teaches toward your next level |
+| "switch to *topic*" | saves exactly where you are in this one, starts the other |
+| "alternate between *A* and *B*" / "finish *A*, then *B*" | sets a rhythm; it suggests the next topic to match |
+| "just the gist of *topic*" / "go deep on *topic*" | changes how far it takes that topic, or a whole module |
 | "go broad first" / "go topic by topic" | switches between a quick pass over everything then deeper passes, and each topic to its target in turn |
 | "pass" | skips the question: it gives you the answer and moves on |
-| "what did we cover on <topic>?" | shows what it taught, from your notes, and which file it's in |
+| "what did we cover on *topic*?" | shows what it taught, from your notes, and which file it's in |
 | "review" | one quick question on a topic that's due for review |
-| "challenge me on <topic>" | an expert role-play that pushes on your answer (Level 4) |
+| "challenge me on *topic*" | an expert role-play that pushes on your answer (Level 4) |
 | "where am I?" | which pass you're on, how many topics have reached your target, and every topic in progress |
 | "help" | a one-page summary and what to do right now |
 
@@ -122,7 +122,7 @@ Every reply ends with one line telling you what to say next, so there's nothing 
   detail has somewhere to attach; then level 2 where your targets ask for it; then practice projects that span
   several topics; then expert challenges. Coming back to a topic on the next pass doubles as a review. Prefer
   to take each topic all the way before the next? Say "go topic by topic". Want one topic deep right now? "Go
-  deep on <topic>" works in either mode.
+  deep on *topic*" works in either mode.
 - **As deep as you want, topic by topic.** Every topic has a target: **overview** (explain it simply),
   **working knowledge** (how it works and where it breaks), **practitioner** (do it for real) or **expert**
   (defend it under hard questions). You set the overall depth when you start, adjust any module in the draft,
@@ -203,7 +203,7 @@ learn from, never as instructions.
 | It asks permission for every note it saves | Start with `claude --permission-mode acceptEdits`, or allow edits for the session when asked |
 | A topic's sources say "not checked" | Web search wasn't available or failed; allow web search and fetch, then say "re-research this topic" |
 | It can't read your plan (a login page, a scanned PDF) | Paste the plan's text into the chat; it saves a copy as `source-plan.md` |
-| It goes deeper than you want, or not deep enough | "just the gist of <topic>", "go deep on <topic>", or edit the Target column in `map.md` |
+| It goes deeper than you want, or not deep enough | "just the gist of *topic*", "go deep on *topic*", or edit the Target column in `map.md` |
 | It drifts or forgets mid-conversation | Start a fresh conversation (`/clear`) and say "continue"; the files carry everything over |
 | You want it to teach differently | Tell it ("shorter messages", "more analogies"), or edit `charter.md` or `learner.md`; it reads them every session |
 

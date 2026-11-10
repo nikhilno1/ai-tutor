@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1 · 2026-11-10
+
+- Placeholders such as "continue *topic*" are shown in italics: GitHub and Obsidian hid `<topic>` as an HTML
+  tag, so the README and the in-folder guide showed "continue" twice.
+
 ## 1.3.0 · 2026-11-10
 
 - **Broad first, then deeper** (the default). The subject is learned in passes: every topic to L1 first (short
@@ -21,7 +26,7 @@
   for expert topics.
 - **Several topics at once.** "Now" and "Parked" become an "In progress" list: one line per topic with its
   exact resume point, so you can learn topics one after another, alternate, or switch freely. "Continue"
-  lists them when there are several; "continue <topic>" resumes that one; "alternate between A and B" sets a
+  lists them when there are several; "continue *topic*" resumes that one; "alternate between A and B" sets a
   rhythm the tutor follows when it suggests what's next. Each conversation edits only its own topic's line,
   so two conversations side by side are safe. Older maps are converted on first edit.
 - The session-start hook reports every topic in progress, and finds the Review column by its header, so maps

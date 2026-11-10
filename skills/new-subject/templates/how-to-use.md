@@ -6,7 +6,7 @@ say next, so there's no sequence to learn.
 ## The loop
 
 1. **Start:** "continue". With one topic on the go it picks up where you stopped; with several it lists them
-   with where each stopped and starts the one that fits best (say "continue <topic>" for another). Wander off
+   with where each stopped and starts the one that fits best (say "continue *topic*" for another). Wander off
    whenever you like; every topic keeps its place.
 2. **Learn:** it asks before it explains. Answer in your own words (voice is great). Wrong answers are the
    point: that's where the gaps show. "pass" gets you the answer straight away.
@@ -17,15 +17,15 @@ say next, so there's no sequence to learn.
 
 | Say | It does |
 |---|---|
-| "teach me <anything>", or just ask | finds the topic, checks the basics under it, teaches you toward the next level |
-| "switch to <topic>" | saves where you are in this one, starts the other |
-| "continue <topic>" | goes back to that topic, exactly where it stopped |
-| "alternate between <A> and <B>" / "finish <A>, then <B>" | sets a rhythm; it suggests the next one to match |
-| "just the gist of <topic>" / "go deep on <topic>" | changes how far it takes that topic (or a whole module) |
+| "teach me *anything*", or just ask | finds the topic, checks the basics under it, teaches you toward the next level |
+| "switch to *topic*" | saves where you are in this one, starts the other |
+| "continue *topic*" | goes back to that topic, exactly where it stopped |
+| "alternate between *A* and *B*" / "finish *A*, then *B*" | sets a rhythm; it suggests the next one to match |
+| "just the gist of *topic*" / "go deep on *topic*" | changes how far it takes that topic (or a whole module) |
 | "go broad first" / "go topic by topic" | a quick pass over every topic then deeper passes, or each topic to its target in turn |
-| "what did we cover on <topic>?" | shows what it taught, from your notes, and which file |
+| "what did we cover on *topic*?" | shows what it taught, from your notes, and which file |
 | "review" | one quick question on a topic that's due; minutes |
-| "challenge me on <topic>" | an expert pushes on your answer (Level 4) |
+| "challenge me on *topic*" | an expert pushes on your answer (Level 4) |
 | "where am I?" | your levels across every area |
 | "help" | this page, and what to do right now |
 
